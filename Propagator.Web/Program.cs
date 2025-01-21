@@ -15,6 +15,7 @@ builder.Services.AddScoped<IRepository, EmployeeRepository>();
 
 builder.Services.AddDbContext<SQLiteContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Demo")));
+builder.Services.AddScoped<SQLiteContext>();
 
 builder.Services.AddGraphQLServer()
     .AddQueryType<EmployeeQuery>();

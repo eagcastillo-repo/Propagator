@@ -3,7 +3,7 @@ using Propagator.Infrastucture.Entities;
 
 namespace Propagator.Application.Queries;
 
-public class EmployeeQuery : IRepository
+public class EmployeeQuery
 {
     private readonly IRepository _employeeRepository;
 
